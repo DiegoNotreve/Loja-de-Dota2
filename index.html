@@ -9,6 +9,9 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <script src="carrossel.js" defer></script>
+    <script src="app.js" defer></script>
+    
   </head>
   <body>
     <section class="inicio">
@@ -35,58 +38,76 @@
 
     <section class="busca" id="busca-sets">
       <div class="busca-container">
-        <h2>Busque por Itens</h2>
+        <h2>Busque por seu set aqui</h2>
         <form action="">
           <input type="text" placeholder="Digite o nome do item" id="searchInput"/>
           <button class="botao_buscar" type="submit">Buscar</button>
         </form>
       </div>
 
-      <!-- modal -->
-      <dialog id="modal">
-        <div class="modal-content">
-        <img id="modalImg" src="" alt="Imagem ampliada" />
-        <button id="fecharBtn">Fechar</button>
+     
+      
+    
+      <div class="carousel-container">
+        <button class="carousel-btn prev"><i class="bi bi-arrow-left-circle-fill"></i></button>
+      
+        <div class="carousel-wrapper">
+          <div class="carousel">
+            <div class="card">
+              <img src="img/imgpronta-removebg-preview.png" data-img="img/antimage gif.GIF" alt="Thumb" />
+              <h3>Proselyte of the Sakura Clan</h3>
+              <p>R$00,00</p>
+              <button class="adicionar_carrinho">Adicionar ao carrinho</button>
+            </div>
+            <div class="card">
+              <img src="img/HUD.webp" alt="Item 2" />
+              <h3>Nome do set 2</h3>
+              <p>R$00,00</p>
+              <button class="adicionar_carrinho">Adicionar ao carrinho</button>
+            </div>
+            <div class="card">
+              <img src="img/HUD.webp" alt="Item 2" />
+              <h3>Nome do set 2</h3>
+              <p>R$00,00</p>
+              <button class="adicionar_carrinho">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="card">
+              <img src="img/HUD.webp" alt="Item 2" />
+              <h3>Nome do set 2</h3>
+              <p>R$00,00</p>
+              <button class="adicionar_carrinho">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="card">
+              <img src="img/HUD.webp" alt="Item 2" />
+              <h3>Nome do set 2</h3>
+              <p>R$00,00</p>
+              <button class="adicionar_carrinho">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="card">
+              <img src="img/HUD.webp" alt="Item 2" />
+              <h3>Nome do set 2</h3>
+              <p>R$00,00</p>
+              <button class="adicionar_carrinho">Adicionar ao carrinho</button>
+            </div>
+
+            <div class="card">
+              <img src="img/HUD.webp" alt="Item 2" />
+              <h3>Nome do set 2</h3>
+              <p>R$00,00</p>
+              <button class="adicionar_carrinho">Adicionar ao carrinho</button>
+            </div>
+            
+          </div>
+        </div>
+      
+        <button class="carousel-btn next"><i class="bi bi-arrow-right-circle-fill"></i></button>
       </div>
-      </dialog>
       
-      <div class="container_card">
-        <div class="card">
-          <img src="img/imgpronta-removebg-preview.png" alt="Item 1" class="imgAbrir" data-modal-img="img/example 4.png"/>
-          <h3>testando caso o nome do set</h3>
-          <p>R$00,00</p>
-          <button class="adicionar_carrinho">Adicionar ao carrinho</button>
-        </div>
-
-        <div class="card">
-          <img src="img/HUD.webp" alt="Item 1" class="imgAbrir" data-modal-img="img/antimage.GIF"/>
-          <h3>Nome do set 2</h3>
-          <p>R$00,00</p>
-          <button class="adicionar_carrinho">Adicionar ao carrinho</button>
-        </div>
-
-        <div class="card">
-          <img src="img/HUD.webp" alt="Item 1" class="imgAbrir" />
-          <h3>Nome do set 3</h3>
-          <p>R$00,00</p>
-          <button class="adicionar_carrinho">Adicionar ao carrinho</button>
-        </div>
-
-        <div class="card">
-          <img src="img/HUD.webp" alt="Item 1" class="imgAbrir" />
-          <h3>Nome do set 4</h3>
-          <p>R$00,00</p>
-          <button class="adicionar_carrinho">Adicionar ao carrinho</button>
-        </div>
-        <div class="card">
-          <img src="img/HUD.webp" alt="Item 1" class="imgAbrir" />
-          <h3>Nome do set 5</h3>
-          <p>R$00,00</p>
-          <button class="adicionar_carrinho">Adicionar ao carrinho</button>
-        </div>
-      </div>
-      
-      
+    
+     
 
 
       <!-- Carrinho de compras -->
@@ -102,6 +123,17 @@
         <button class="botao_finalizar">Finalizar compra</button>
       </aside>
     </section>
-    <script src="app.js" defer></script>
+
+     <!-- modal -->
+     <dialog id="modal">
+      <div class="modal-content">
+        <img id="modalImg" src="" alt="Imagem ampliada" />
+        <button id="fecharBtn">Fechar</button>
+      </div>
+    </dialog>
+    
+   
+    <script src="modal.js"></script>
+    
   </body>
 </html>
